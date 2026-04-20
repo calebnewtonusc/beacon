@@ -1,0 +1,31 @@
+# node
+node_modules/
+.pnp
+.pnp.js
+.pnpm-store/
+
+# next
+.next/
+out/
+build/
+dist/
+
+# cargo / anchor
+target/
+.anchor/
+test-ledger/
+**/*.rs.bk
+Cargo.lock
+
+# env
+.env
+.env.*
+!.env.example
+
+# tooling
+.DS_Store
+.vscode/
+.idea/
+*.log
+.turbo/
+.vercel/

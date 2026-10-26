@@ -32,9 +32,9 @@ Three account types, four instructions.
 ### Instructions
 
 - `register_schema(schema_id, name, uri, revocable)`
-- `issue_attestation(subject, payload_hash, expires_at, payload)` — requires a preceding `Ed25519Program` instruction signed by the issuer over `payload_hash`.
-- `revoke_attestation()` — only the original issuer, only if the schema is `revocable`.
-- `touch_verifier()` — idempotent initializer for `VerifierScore`.
+- `issue_attestation(subject, payload_hash, expires_at, payload)`, requires a preceding `Ed25519Program` instruction signed by the issuer over `payload_hash`.
+- `revoke_attestation()`, only the original issuer, only if the schema is `revocable`.
+- `touch_verifier()`, idempotent initializer for `VerifierScore`.
 
 ### Events
 
